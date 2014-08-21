@@ -1,0 +1,17 @@
+<h1>Hello, <%= @name %>!</h1>
+
+<p>
+Someone mentioned you on Twitter. You are special.
+</p>
+
+<p>
+Here's what they said:
+</p>
+
+<blockquote>
+<%= @tweet_text %>
+</blockquote>
+
+<p>
+To reply back, go here! <%= link_to new_tweet_url(original_tweet_id: @tweet_id) %>
+</p>
