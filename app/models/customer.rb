@@ -17,6 +17,8 @@ class Customer < ActiveRecord::Base
   end
 
   def upcase_state
-    self.state = state.to_s.upcase
+    if state
+      self.state = state.to_s.upcase
+    end
   end
 end
