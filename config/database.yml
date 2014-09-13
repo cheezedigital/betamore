@@ -1,5 +1,5 @@
 default: &default
-  adapter: mysql2
+  adapter: postgresql
   username: root
   host: localhost
   # For details on connection pooling, see rails configuration guide
