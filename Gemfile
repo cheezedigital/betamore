@@ -32,6 +32,7 @@ end
 group :test do
   gem 'capybara'
   gem 'launchy'
+  gem 'guard-rspec'
   gem 'poltergeist'
   gem 'rspec-rails'
 end
