@@ -6,7 +6,7 @@ class Product < ActiveRecord::Base
   validates :price, numericality: { greater_than_or_equal_to: 0 }
 
   def self.incredible
-    where("name like 'Incredible%'")
+    where("name like '%Incredible%'")
   end
 
   def self.cheap
