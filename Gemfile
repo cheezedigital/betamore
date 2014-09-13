@@ -23,7 +23,6 @@ group :production do
   gem "rails_12factor"
 end
 group :development do
-  gem 'faker'
   gem 'hirb'
   gem 'pry'
   gem 'brakeman', require: false
@@ -34,5 +33,10 @@ group :test do
   gem 'launchy'
   gem 'guard-rspec'
   gem 'poltergeist'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
   gem 'rspec-rails'
+  gem 'faker'
 end

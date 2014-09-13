@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Product, :type => :model do
   describe '.incredible' do
-    let!(:incredible_product) {
+    let!(:incredible_product) { 
       Product.create!({
         name: "Incredible product",
         price: 49.95
