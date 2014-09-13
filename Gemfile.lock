@@ -58,6 +58,7 @@ GEM
       execjs
     coffee-script-source (1.7.1)
     daemons (1.1.9)
+    diff-lcs (1.2.5)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.2.1)
@@ -126,6 +127,22 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+    rspec-core (3.0.3)
+      rspec-support (~> 3.0.0)
+    rspec-expectations (3.0.3)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.0.0)
+    rspec-mocks (3.0.3)
+      rspec-support (~> 3.0.0)
+    rspec-rails (3.0.2)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 3.0.0)
+      rspec-expectations (~> 3.0.0)
+      rspec-mocks (~> 3.0.0)
+      rspec-support (~> 3.0.0)
+    rspec-support (3.0.3)
     ruby2ruby (2.1.1)
       ruby_parser (~> 3.1)
       sexp_processor (~> 4.0)
@@ -196,6 +213,7 @@ DEPENDENCIES
   pry
   rails (= 4.1.5)
   rails_12factor
+  rspec-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   slim
